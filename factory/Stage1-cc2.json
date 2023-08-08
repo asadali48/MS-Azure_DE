@@ -1,0 +1,9 @@
+{
+	"name": "Stage1-cc2",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d9d00f70-3195-4055-ad92-160b917bd629",
+		"tenantId": "d3ccb8a9-a1dd-47b5-8202-e76ece91b187"
+	}
+}
