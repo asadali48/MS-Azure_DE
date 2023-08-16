@@ -20,7 +20,19 @@
 		},
 		"schema": [
 			{
-				"name": "id\tname\tcity\tsalary",
+				"name": "empid",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "department",
 				"type": "String"
 			}
 		]

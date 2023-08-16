@@ -28,12 +28,15 @@
 			],
 			"scriptLines": [
 				"source(output(",
-				"          {id     name     city     salary} as string",
+				"          empid as integer,",
+				"          name as string,",
+				"          country as string,",
+				"          department as integer",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> empSource",
-				"empSource alterRow(upsertIf(1 == 1)) ~> alterRow1",
+				"empSource alterRow(upsertIf(1==1)) ~> alterRow1",
 				"alterRow1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     deletable:false,",
@@ -46,7 +49,10 @@
 				"     skipDuplicateMapOutputs: true,",
 				"     errorHandlingOption: 'stopOnFirstError',",
 				"     mapColumn(",
-				"          {id     name     city     salary}",
+				"          empid,",
+				"          name,",
+				"          country,",
+				"          department",
 				"     )) ~> sink1"
 			]
 		}
