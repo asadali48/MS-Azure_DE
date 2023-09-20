@@ -1,10 +1,6 @@
 {
 	"name": "AzureSqlTable2",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LinkedServiceAzureSqlDatabase",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"table": {
 				"type": "string"
